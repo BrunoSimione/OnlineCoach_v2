@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/new_training"
+        android:orderInCategory="100"
+        android:title="New training"
+        app:showAsAction="never" />
+
+    <item
+    android:id="@+id/send_message"
+    android:orderInCategory="200"
+    android:title="Send Message"
+    app:showAsAction="never" />
+
+</menu>

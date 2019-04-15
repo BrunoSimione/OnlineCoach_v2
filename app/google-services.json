@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "693484734797",
+    "firebase_url": "https://onlinecoach-c89ad.firebaseio.com",
+    "project_id": "onlinecoach-c89ad",
+    "storage_bucket": "onlinecoach-c89ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693484734797:android:81bc6372bac7fe37",
+        "android_client_info": {
+          "package_name": "com.example.bruno.onlinecoach"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "693484734797-74knrhdfk5ug642d3p5rmrpmjf19ctq1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bruno.onlinecoach",
+            "certificate_hash": "68cb7cd012310c693df2bb3df5becefed1a04f92"
+          }
+        },
+        {
+          "client_id": "693484734797-s30vopnvd1ik58c8fpi8k16snj197sld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6uar0fWYrhOjrw34qfsNCS8gcBXOXWhc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "693484734797-s30vopnvd1ik58c8fpi8k16snj197sld.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

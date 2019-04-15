@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Training Set  (17/02 - 23/02)"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@android:color/holo_blue_dark"
+        android:padding="5dp"
+        android:layout_margin="10dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_exercise_list"
+        android:name="com.example.bruno.onlinecoach.ExerciseListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        tools:context=".Student.ExerciseListFragment"
+        tools:listitem="@layout/fragment_exercise" />
+
+</LinearLayout>
+
