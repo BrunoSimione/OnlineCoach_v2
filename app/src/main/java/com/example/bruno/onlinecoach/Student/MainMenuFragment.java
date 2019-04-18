@@ -102,6 +102,14 @@ public class MainMenuFragment extends Fragment {
             }
         });
 
+        option4 = view.findViewById(R.id.option4);
+        option4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                optionClicked(v, 4);
+            }
+        });
+
         txt_weight = view.findViewById(R.id.txt_weight);
         txt_weight.setText(student_weight + " kg");
         return view;

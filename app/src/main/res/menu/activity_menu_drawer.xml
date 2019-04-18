@@ -5,33 +5,25 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_weight"
+            android:icon="@drawable/ic_weight"
+            android:title="Measures" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_training"
+            android:icon="@drawable/ic_gym"
+            android:title="Training" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Coach">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:id="@+id/nav_message"
+                android:icon="@drawable/ic_message"
+                android:title="Message" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/nav_coach"
+                android:icon="@drawable/ic_coach"
+                android:title="New/Update Coach" />
         </menu>
     </item>
 

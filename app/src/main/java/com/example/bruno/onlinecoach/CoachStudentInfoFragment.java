@@ -2,6 +2,7 @@ package com.example.bruno.onlinecoach;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -40,7 +41,7 @@ public class CoachStudentInfoFragment extends Fragment {
     private String mParam2;
     private ArrayList<String> student_exercise;
     Double weight, fat, muscle;
-    String name;
+    String name, phone, id;
 
     private OnFragmentInteractionListener mListener;
 
@@ -69,6 +70,8 @@ public class CoachStudentInfoFragment extends Fragment {
             fat = getArguments().getDouble("fat");
             muscle = getArguments().getDouble("muscle");
             name = getArguments().getString("name");
+            phone = getArguments().getString("phone");
+            id = getArguments().getString("id");
         }
     }
 
@@ -101,7 +104,7 @@ public class CoachStudentInfoFragment extends Fragment {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         String userInputValue = userInput.getText().toString();
-                        mListener.onFragmentInteractionButton(userInputValue);
+                        mListener.onFragmentInteractionButton(id, userInputValue);
                         Toast.makeText(getContext(), userInputValue + " updated", Toast.LENGTH_SHORT).show();
                     }
                 });
@@ -116,12 +119,25 @@ public class CoachStudentInfoFragment extends Fragment {
             }
         });
 
+        Button btnMessage = (Button) view.findViewById(R.id.btn_new_message);
+        btnMessage.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                newMessageClicked();
+            }
+        });
+
         RecyclerView rvStudentExList = (RecyclerView) view.findViewById(R.id.rv_ex_student_list);
         rvStudentExList.setLayoutManager(new LinearLayoutManager(getContext()));
         rvStudentExList.setAdapter(new ExListItemRecyclerViewAdapter(student_exercise , mListener));
 
 
         return view;
+    }
+
+    private void newMessageClicked() {
+        String number = phone;  // The number on which you want to send SMS
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms", number, null)));
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -165,6 +181,6 @@ public class CoachStudentInfoFragment extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(String ex);
-        void onFragmentInteractionButton(String ex);
+        void onFragmentInteractionButton(String id, String ex);
     }
 }

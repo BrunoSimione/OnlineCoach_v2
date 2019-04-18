@@ -4,14 +4,60 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Student {
-    String id, name, coach;
-    int height, weight;
+    String id, name, coach, phone, coach_name, coach_phone;
+    int height;
+    int weight;
+    int age;
+
+
+
+    int weight_goal;
     ArrayList<String> exercises = new ArrayList<>();
     ArrayList<Measure> measures_history = new ArrayList<>();
     //Exercise history;
 
     public Student() {
 
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getWeight_goal() {
+        return weight_goal;
+    }
+
+    public void setWeight_goal(int weight_goal) {
+        this.weight_goal = weight_goal;
+    }
+
+    public String getCoach_name() {
+        return coach_name;
+    }
+
+    public void setCoach_name(String coach_name) {
+        this.coach_name = coach_name;
+    }
+
+    public String getCoach_phone() {
+        return coach_phone;
+    }
+
+    public void setCoach_phone(String coach_phone) {
+        this.coach_phone = coach_phone;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public String getCoach() {
