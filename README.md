@@ -16,5 +16,6 @@ Android App created to allows the communication between a gym coach and a studen
 
 ### Technologies
 - Android (SDK min: 21, target: 28)
+- Fragments
 - Firebase real time database
 - GraphView
